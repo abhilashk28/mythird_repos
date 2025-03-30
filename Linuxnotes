@@ -232,3 +232,78 @@ To quit from vim editor - :q
 To quit forcefully - :q!
 To save & quit at a time - :wq
 To save & quit forcefully at a time - :wq!
+
+---------------------------------------------------------
+1.
+2.
+3.
+LINUX CLASS 5
+USER COMMANDS:
+to create user : useradd username
+to see all users : getent passwd (or) cat /etc/passwd
+to check a specifi c user : id username
+to set a password to user : passwd username
+to switch to user : su - username
+to delete a user : userdel username (this will delete only user & group)
+to delete a user : userdel -r username (this will delete all user, group & path also)
+NOTE:
+WHENEVER WE CREATE A USER THEN AUTOMATICALLY GROUP WILL BE CREATE.
+WHENEVER WE CRATE A USER, THEN AUTOMATICALLY PATH WILL BE CREATE.
+WE CANT DELETE THE GROUPS DIRECTLY WHICH ARE CREATED BY THE USERS, IF WE DELETE USER THEN AUTOMATICALLY GROUP WILL BE DELETE
+UNDERSTAND THE USER:
+shiva:x:1001:1001::/home/shiva:/bin/bash
+shiva == username
+x == it stores the users password
+1001 == UID (User ID)
+1001 == GID (Group ID)
+/home/shiva == this is user path
+/bin/bash = users shell path
+GROUP COMMANDS:
+to create a group : groupadd groupname
+to see the list of groups : getent group (or) cat /etc/group
+to delete a group : groupdel group-name
+to add a user to a group : usermod -a -G group-name user-name
+CHANGING THE OWNERS OF A FILE :
+to change the user of a fi le : chown username fi lename
+to change the user of a multiple fi les : chown username fi le1 fi le2 fi le3
+to change the user of all the fi les : chown username *
+to change the group of a fi le : chgrp groupname fi lename
+to change the group of a multiple fi les : chgrp groupname fi le1 fi le2 fi le3
+to change the group of all the fi les : chgrp username *
+to change user & group at a time to a fi le : chown user:group fi lename
+to change user & group at a time to a multiple fi les : chown user:group fi le1 fi le2
+to change user & group at a time to a all fi les : chown user:group *
+to change owner of a folder only : chown user:group foldername
+to change the owners of a folder along with fi les inside the folder : chown -R useR:group folder.
+PERMISSIONS OF A FILE:
+whenever we create a fi le, we will get the default permissions like this rw-r--r--
+Now lets understand the permissions by taking the default permissions
+USER PERMISSION : rw-
+GROUP PERMISSIONS : r--
+OTHERS PERMISSIONS : r--
+Here,
+R = Read -----> 4
+W = write -----> 2
+X = Execute ----> 1
+- = Nothing ----> 0
+RW- = 4+2+0 = 6
+R-- = 4+0+0 = 4
+R-- = 4+0+0 = 4
+FINALLY, FOR OUR FILE CONTAINS 644 PERMISSIONS BY DEFUALT
+ex:
+user = rwx --------> 4+2+1 = 7
+group = --x -------> 0+0+1 = 1
+others = r-x -------> 4+0+1 = 5
+715
+ex:
+r-x = 5
+-w- = 2
+r-- = 4
+To change the permission of a fi le : chmod 777 fi lename
+To change the permissions of a multiple fi les : chmod 751 fi le1 fi le2 fi le3
+To change the permission of a folder : chmod 111 folder
+To change the permission of a multiple folders : chmod 777 folder1 folder2 folder3
+To change the permissions of all fi les : chmod 777 *
+To change the permissions of folders and all fi les inside the folder : chmod -R 777 folder
+------------------------------------------------------------------------------------------------
+
