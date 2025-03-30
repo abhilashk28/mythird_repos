@@ -220,3 +220,4 @@ git remote rm origin
 used to unlink the github-repo
 git remote rename old -link new-link
 used to change the repo
+---- adding data to check compare and pul request feature in git 
