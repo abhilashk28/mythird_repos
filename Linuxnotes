@@ -1,1 +1,234 @@
-adding data to pull the repos into the local
+LINUX CLASS-1
+LINUX:
+Linux is an free and Open-source operating system with high security. Linux is multi user based OS.
+OS: Operating System
+An Operating System (OS) is a software that acts as an interface between computer hardware components and the user.
+Every computer system must have at least one operating system to run other programs. Applications like Browsers, MS Offi ce, Notepad Games, etc., need some environment to run and perform its tasks.
+TYPES OF OS:
+Key Features of Linux:
+Linux follows the open-source model.
+Linux has multiuser and multitasking capabilities.
+Security features.
+Linux is used for servers, embedded systems, supercomputers, etc
+LINUX OS DISTRIBUTIONS:
+Many of the users taken the linux OS and modifi ed according to their requirements and released into the market with diff erent names called Linux distribution.
+RedHat
+Ubuntu
+Debian
+Centos
+Fedora
+Opensuse
+Kali Linux
+Amazon Linux
+Rocky Linux
+HISTORY:On Sep 17th 1991, Linus Torvalds a student at the university of Helsinki, Finland, He released the fi rst version of the Linux kernel, known as Linux 0.01, as open-source software.
+The Linux kernel is written in C language.
+He wrote this program specially for his own PC
+Firstly he wanted to name it as 'Freax' but later it became 'Linux'.
+Today, supercomputers, smart phones, desktop, web servers, tablet, laptops and home appliances like washing machines, DVD players, routers, modems, cars, refrigerators, etc use Linux OS.
+KERNEL:
+It is the core or the heart of the operating system. It's the central part that manages and facilitates communication between the computer's hardware and software.
+SHELL:
+A shell that allows users to interact with the operating system. There are two types of shells.
+Command Line Interface (CLI): Executes the command provided by user given in the form command and display the output in terminal.
+Executes the process provided by user in graphical way and output is displayed in the graphical window.
+COMMAND:
+It is an instruction/request given to the operating system by a user.
+It tells computer to perform a particular task.
+TERMINAL:
+It is a text-based interface that allows you to interact with the operating system by typing commands.
+It's a way for you to communicate with the linux machines.
+LETS DIVE INTO PRACTICAL SESSION:
+By default we are in ec2-user, but if we want to perform any action we should be in root user
+because, root is the ultimate king of linux, root has full permissions, so that we can run any command anywhere.
+To login as root user : sudo -i
+Here sudo : super user do
+to logout from root user and go back to ec2-user : exit
+In Linux we have diff erent types of commands
+SYSTEM COMMANDS
+HARDWARE COMMANDS
+FILE COMMANDS
+PERMISSION COMMANDS
+USER COMMANDS
+SEARCH COMMANDS
+NETWORKING COMMANDS
+SYSTEM COMMANDS: Used to get system information
+uname : used to get type of OS
+uname -r : used to get kernel version of our OS
+uname -a : used to get full info about OS
+clear: this command is used to clear the clear (or) you can use ctrl + l as a short cut
+uptime : used to get since how long our system is in running state
+uptime -p : this will give only time
+hostname: used to get private dns name of our system
+hostname -i : used to get private ip of our system
+hostnamectl set-hostname “swiggy” : used to change hostname
+ip addr : used to get private IP
+ip route : used to get private IP
+ifconfi g : used to get private IP
+date : to get todays date
+timedatectl : used to get timezones
+timedatectl set-timezone Asia/Kolkata : used to change Timezone to IST
+who : used to see how many users have been loggin into your system
+whoami : used to see the current user.
+SOME EXTRA COMMANDS FOR PRACTICE:
+date +”%d” : used to get only date
+date +”%m” : used to get only month
+date +”%y” : to get only year
+date +”%H” : used to get Hours
+date +”%M” : used to get Minutes
+date +”%S” : used to get seconds
+date +”%D” : it will return todays full date (02/01/24) FORMAT : mm/dd/yy
+date +”%F” : it will return todays full date (2024-02-01) FORMAT : yyyy-mm-dd
+date +”%A” : used to get day of a week
+date +”%B” : used to get month of a year
+HARDWARE COMMANDS:
+lscpu (or) cat /proc/cpuinfo : used to get cpu info
+free (or) cat /proc/meminfo : used to get ram info
+df -h : used to get memory informationadding data to pull the repos into the local
+
+LINUX CLASS-1
+LINUX:
+Linux is an free and Open-source operating system with high security. Linux is multi user based OS.
+OS: Operating System
+An Operating System (OS) is a software that acts as an interface between computer hardware components and the user.
+Every computer system must have at least one operating system to run other programs. Applications like Browsers, MS Offi ce, Notepad Games, etc., need some environment to run and perform its tasks.
+TYPES OF OS:
+Key Features of Linux:
+Linux follows the open-source model.
+Linux has multiuser and multitasking capabilities.
+Security features.
+Linux is used for servers, embedded systems, supercomputers, etc
+LINUX OS DISTRIBUTIONS:
+Many of the users taken the linux OS and modifi ed according to their requirements and released into the market with diff erent names called Linux distribution.
+RedHat
+Ubuntu
+Debian
+Centos
+Fedora
+Opensuse
+Kali Linux
+Amazon Linux
+Rocky Linux
+HISTORY:On Sep 17th 1991, Linus Torvalds a student at the university of Helsinki, Finland, He released the fi rst version of the Linux kernel, known as Linux 0.01, as open-source software.
+The Linux kernel is written in C language.
+He wrote this program specially for his own PC
+Firstly he wanted to name it as 'Freax' but later it became 'Linux'.
+Today, supercomputers, smart phones, desktop, web servers, tablet, laptops and home appliances like washing machines, DVD players, routers, modems, cars, refrigerators, etc use Linux OS.
+KERNEL:
+It is the core or the heart of the operating system. It's the central part that manages and facilitates communication between the computer's hardware and software.
+SHELL:
+A shell that allows users to interact with the operating system. There are two types of shells.
+Command Line Interface (CLI): Executes the command provided by user given in the form command and display the output in terminal.
+Executes the process provided by user in graphical way and output is displayed in the graphical window.
+COMMAND:
+It is an instruction/request given to the operating system by a user.
+It tells computer to perform a particular task.
+TERMINAL:
+It is a text-based interface that allows you to interact with the operating system by typing commands.
+It's a way for you to communicate with the linux machines.
+LETS DIVE INTO PRACTICAL SESSION:
+By default we are in ec2-user, but if we want to perform any action we should be in root user
+because, root is the ultimate king of linux, root has full permissions, so that we can run any command anywhere.
+To login as root user : sudo -i
+Here sudo : super user do
+to logout from root user and go back to ec2-user : exit
+In Linux we have diff erent types of commands
+SYSTEM COMMANDS
+HARDWARE COMMANDS
+FILE COMMANDS
+PERMISSION COMMANDS
+USER COMMANDS
+SEARCH COMMANDS
+NETWORKING COMMANDS
+SYSTEM COMMANDS: Used to get system information
+uname : used to get type of OS
+uname -r : used to get kernel version of our OS
+uname -a : used to get full info about OS
+clear: this command is used to clear the clear (or) you can use ctrl + l as a short cut
+uptime : used to get since how long our system is in running state
+uptime -p : this will give only time
+hostname: used to get private dns name of our system
+hostname -i : used to get private ip of our system
+hostnamectl set-hostname “swiggy” : used to change hostname
+ip addr : used to get private IP
+ip route : used to get private IP
+ifconfi g : used to get private IP
+date : to get todays date
+timedatectl : used to get timezones
+timedatectl set-timezone Asia/Kolkata : used to change Timezone to IST
+who : used to see how many users have been loggin into your system
+whoami : used to see the current user.
+SOME EXTRA COMMANDS FOR PRACTICE:
+date +”%d” : used to get only date
+date +”%m” : used to get only month
+date +”%y” : to get only year
+date +”%H” : used to get Hours
+date +”%M” : used to get Minutes
+date +”%S” : used to get seconds
+date +”%D” : it will return todays full date (02/01/24) FORMAT : mm/dd/yy
+date +”%F” : it will return todays full date (2024-02-01) FORMAT : yyyy-mm-dd
+date +”%A” : used to get day of a week
+date +”%B” : used to get month of a year
+HARDWARE COMMANDS:
+lscpu (or) cat /proc/cpuinfo : used to get cpu info
+free (or) cat /proc/meminfo : used to get ram info
+df -h : used to get memory information
+1.
+2.
+1.
+2.
+3.
+LINUX CLASS 3
+ll : used to see the list of fi les in order (A-Z)
+ll -t : used to see the list of the fi les based on modifi cation/creation time
+ll -r : used to see the fi les in reverse order (Z to A)
+ll -a : used to see all fi les including hidden
+CAT COMMAND:
+cat command is used to read the data from a fi le, it is also used to append the data in a fi le
+cat fi lename: used to read the data from a fi le
+cat>fi lename : used to overwrite the data
+cat>>fi lename: used to append the data
+NOTE: Cat command is used to append the data, but here the problem is, it is not possible to modify the data. To avoid this issue we can use editor in linux.
+There are 2 types of editors in linux
+Vim editor
+Nano editor
+VIM EDITOR: It is used to edit the fi les in linux machines, It has 3 modes
+Command mode
+Insert mode
+Save & quit mode
+To open any fi le in vim editor : vim fi lename (or) vi fi lename
+1. COMMAND MODE: this is the default mode in vim editor, It is used to perform some actions like used to copy the data, delete the data and we can make undo and redo the changes as well.
+gg : used to go to 1st line of the fi le
+G : used to go to last line of the fi le
+M : used to go to middle of the fi le
+4gg : used to go to 4th line of the fi le
+17gg : used to go to 17th line of the fi le
+:23 : used to go to 23rd line of the fi le
+:set number : used to set numbers of the fi le
+yy : used to copy the line
+4yy : used to copy 4 lines from our cursor
+p : paste the copied content
+10p : paste the copied content 10 times
+dd : used to delete the line
+5dd : used to delete 5 lines from the cursor
+u : used to undo the changes
+crtl + r : used to redo the changes.
+/word : used to search for a word in a fi le
+?word : used to search for a word in a fi le
+:%s/old/new/ : used to replace
+2. INSERT MODE: This mode is used to insert the data or make any modifi cations in a fi le.
+To go to insert mode : i
+To go back to command mode : esc
+To go to the ending of the line : A
+To go to starting of this line : I
+To create a new line above the cursor : O
+To create a new line below the cursor : o
+DIFFERENCE B/W COMMAND MODE KEYS & INSERT MODE.
+If we perform command mode keys we will be in command mode only
+If we perform insert mode keys we will go to insert mode.
+3. SAVE & QUIT MODE: This is used to save the data and quit from vim editor
+To save the data - :w
+To quit from vim editor - :q
+To quit forcefully - :q!
+To save & quit at a time - :wq
+To save & quit forcefully at a time - :wq!
